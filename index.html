@@ -9,24 +9,458 @@
         content="Персональне студентське портфоліо. Інформація про освіту, навички, хобі, улюблені книги та проєкти.">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-    <!-- ДЛЯ Себе: кароч це щоб в умовному телеграмі був короткий міні опис сторінки-->
+    <!-- Open Graph -->
     <meta property="og:title" content="Студентське портфоліо">
     <meta property="og:description" content="Особистий сайт з інформацією про мій шлях, інтереси та досягнення.">
     <meta property="og:image" content="images/og-image.jpg">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-
+        <!-- Шапка сайту -->
     </header>
 
     <main>
+        <!-- 1 ПРО МЕНЕ -->
+        <section>
+            <div>
+                <h1>Привіт, вітаю в моєму портфоліо!</h1>
+                <div>
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="images/photo-desktop.jpg">
+                        <source media="(min-width: 768px)" srcset="images/photo-tablet.jpg">
+                        <img src="images/photo-mobile.jpg" alt="Моє фото" width="300" height="300" loading="lazy">
+                    </picture>
+                    <div>
+                        <p>Я студент, який обожнює вивчати щось нове та досліджувати глибокі та цікаві концепції та
+                            створювати цікаві речі. Якби мав декілька життів, спробував би себе в дуже різних сферах.
+                        </p>
+                        <address>
+                            Зв'язатися: <a href="mailto:bohdan.myskiv67@gmail.com">bohdan.myskiv67@gmail.com</a>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2 Шкільна освіта -->
+        <section>
+            <div>
+                <h2>Освіта: школа</h2>
+                <div>
+                    <p>Навчався у звичайній школі з 2013 по 2024 рік. Найбільше запам'яталася цікаві та повчальні уроки
+                        з англійської мови, інформатики та зарубіжної літератури.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3 Освіта університетська -->
+        <section>
+            <div>
+                <h2>Освіта: університет</h2>
+                <div>
+                    <p>Зараз я здобуваю освіту за спеціальністю "Прикладна математика", 3 курс. Мої улюблені дисципліни
+                        — програмування на С++ та диференціальні рівняння.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4 Улюблені навчальні предмети -->
+        <section>
+            <div>
+                <h2>Улюблені навчальні предмети</h2>
+                <ul>
+                    <li><strong>Програмування на С++</strong> — подобається досліджувати підкапотні механіки мови та
+                        цікаві архітектурні рішення.</li>
+                    <li><strong>Диференціальні рівняння</strong> — подобається як вони описують реальний світ і
+                        філософія передбачати майбутнє фізичного процесу за допомогою них</li>
+                    <li><strong>Англійська мова</strong> — відкриває доступ до світової документації та ком'юніті.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 5 Навички -->
+        <section>
+            <div>
+                <h2>Мої навички</h2>
+                <p>Рівень володіння навичками:</p>
+                <div>
+                    <div>
+                        <span>Програмування</span>
+                        <div role="img" aria-label="Високий рівень">
+                            <div style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <span>Математика</span>
+                        <div role="img" aria-label="Хороший рівень">
+                            <div style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <span>Командна робота</span>
+                        <div role="img" aria-label="Відмінний рівень">
+                            <div style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6 Хобі та захоплення -->
+        <section>
+            <div>
+                <h2>Хобі та захоплення</h2>
+                <div>
+                    <div>
+                        <img src="images/icon-camera.png" alt="Майнкрафт" width="48" height="48" loading="lazy">
+                        <h3>Майнкрафт</h3>
+                        <p>Люблю досліджувати ігрові механіки гри та цікаві модифікації.</p>
+                    </div>
+                    <div>
+                        <img src="images/icon-guitar.png" alt="Ліплення" width="48" height="48" loading="lazy">
+                        <h3>Ліплення</h3>
+                        <p>Подобається створювати фігурки з глини та пластиліну, особливо різноманітних істот, що
+                            населяють улюблені всесвіти.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7 Улюблені книги -->
+        <section>
+            <div>
+                <h2>Улюблені книги</h2>
+                <div>
+                    <table>
+                        <caption>Мої улюблені книги для саморозвитку та відпочинку</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Обкладинка</th>
+                                <th scope="col">Автор</th>
+                                <th scope="col">Назва</th>
+                                <th scope="col">Моє враження</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="images/book-clean-code.jpg" alt="Обкладинка Фах" width="50" height="75"
+                                        loading="lazy"></td>
+                                <td>Айзек Азімов</td>
+                                <td>Фах</td>
+                                <td>Я ЛЮБЛЮ ПЕЛЬМЕНІ</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/book-witcher.jpg" alt="Обкладинка Алхімік" width="50" height="75"
+                                        loading="lazy"></td>
+                                <td>Пауло Коельйо</td>
+                                <td>Алхімік</td>
+                                <td>Прикольно, мні нрав</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/book-1984.jpg" alt="Обкладинка Момент" width="50" height="75"
+                                        loading="lazy"></td>
+                                <td>Володимир Винниченко</td>
+                                <td>Момент</td>
+                                <td>ТА!</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/book-dune.jpg" alt="Обкладинка Дюна" width="50" height="75"
+                                        loading="lazy"></td>
+                                <td>Володимир Винниченко</td>
+                                <td>Чорна пантера та білий ведмідь</td>
+                                <td>Хіба не зрозуміло?</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/book-atomic.jpg" alt="Обкладинка Атомні звички" width="50"
+                                        height="75" loading="lazy"></td>
+                                <td>Джеймс Клір</td>
+                                <td>Атомні звички</td>
+                                <td>Дуже дієва система для формування хороших звичок.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8 Улюблена музика -->
+        <section>
+            <div>
+                <h2>Улюблена музика</h2>
+                <div>
+                    <iframe title="Улюблений плейлист 1" style="border-radius:12px; border:none;"
+                        src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO1xTa6K?utm_source=generator&si=7c9827df462b4bd3"
+                        width="100%" height="352" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                    <iframe title="Улюблений плейлист 2" style="border-radius:12px; border:none;"
+                        src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO2LDAoF?utm_source=generator&si=d88c185e9f2d4d62"
+                        width="100%" height="352" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                    <iframe title="Улюблений плейлист 3" style="border-radius:12px; border:none;"
+                        src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO00qrqr?utm_source=generator&si=8ee1abc6c515423a"
+                        width="100%" height="352" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9 Улюблені аніме та мультсеріали -->
+        <section>
+            <div>
+                <h2>Улюблені аніме та мультсеріали</h2>
+                <div>
+                    <article>
+                        <img src="images/anime_violet-evergarden.jpg" alt="Постер Вайолет Еверґарден" width="100"
+                            height="150" loading="lazy">
+                        <div>
+                            <h3>Вайолет Еверґарден</h3>
+                            <p>Моя оцінка: 100/10</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="images/anime_how_to_train_dragon-prince.jpg" alt="Постер Як приборкати дракона 2"
+                            width="100" height="150" loading="lazy">
+                        <div>
+                            <h3>Як приборкати дракона</h3>
+                            <p>Моя оцінка: 11/10</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10 Місця які б хотів відвідати -->
+        <section>
+            <div>
+                <h2>Місця, куди я обов'язково потраплю</h2>
+                <p>Мій список невеликий, але кожне місце має для мене особливе значення.</p>
+                <div>
+                    <figure>
+                        <img src="img/metro-paris.jpg" alt="Метро Парижа" width="400" height="300" loading="lazy">
+                        <figcaption>Французьке метро. Хочу просто їхати в цій підземці, слухати музику і дивитися у
+                            вікно.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/szkocka-cafe.jpg" alt="Шкотська кав'ярня у Львові" width="400" height="300"
+                            loading="lazy">
+                        <figcaption>«Шкотська кав'ярня» у Львові. Місце, де чілив Стефан Банах і творив історію
+                            математики.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/tokyo.jpg" alt="Нічне Токіо, Японія" width="400" height="300" loading="lazy">
+                        <figcaption>Токіо, Японія. Хочу на власні очі побачити цей неймовірний ритм одного з
+                            найтехнологічніших мегаполісів світу та відчути його унікальну неонову естетику.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11 Люди які мене надихають -->
+        <section>
+            <div>
+                <h2>Люди, які мене надихають</h2>
+                <p>Особистості, чий шлях, творчість та мислення мотивують мене рухатись вперед.</p>
+                <div>
+                    <article>
+                        <img src="img/petrash.jpg" alt="Аня Петраш" width="100" height="100">
+                        <h3>Аня Петраш</h3>
+                        <p>Інді-виконавиця</p>
+                        <p><strong>Чому:</strong> Робить дуже класну українську інді-музику та має неймовірно естетичний
+                            стиль. Її візуал, подача і загальний вайб просто перехоплюють подих і сильно надихають на
+                            творчість.</p>
+                    </article>
+                    <article>
+                        <img src="img/terence-tao.jpg" alt="Теренс Тао" width="100" height="100">
+                        <h3>Теренс Тао</h3>
+                        <p>Математик, лауреат Філдсівської премії</p>
+                        <p><strong>Чому:</strong> Абсолютний сігма у світі математики. Людина з феноменальним IQ, яка
+                            розв'язує неможливі задачі. Надихає його геніальний, але при цьому дуже спокійний і
+                            системний підхід до вирішення найскладніших проблем.</p>
+                    </article>
+                    <article>
+                        <img src="img/linus-torvalds.jpg" alt="Лінус Торвальдс" width="100" height="100">
+                        <h3>Лінус Торвальдс</h3>
+                        <p>Програміст, творець Linux та Git</p>
+                        <p><strong>Чому:</strong> Написав Linux просто як хобі, а Git створив за пару тижнів, бо його
+                            дратували існуючі системи. Надихає його безкомпромісність і те, як одна людина змінила всю
+                            світову IT-індустрію.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12 Проєкти та досягнення -->
+        <section>
+            <div>
+                <h2>Мої проєкти</h2>
+                <div>
+                    <article>
+                        <h3>Командний Тетріс</h3>
+                        <p>Розробка класичної гри в рамках командного проєкту. Реалізовано базову механіку, систему
+                            балів та рівнів складності.</p>
+                        <div>
+                            <strong>Стек:</strong>
+                            <span>Python</span>
+                            <span>Pygame</span>
+                            <span>Git / GitHub</span>
+                        </div>
+                        <a href="https://github.com/MrBM0945/tetris" target="_blank"
+                            rel="noopener noreferrer">Подивитись код на GitHub</a>
+                    </article>
+                    <article>
+                        <h3>Назва другого проєкту</h3>
+                        <p>Короткий опис того, що робить цей проєкт, яку проблему він вирішує або що я навчився під час
+                            його створення.</p>
+                        <div>
+                            <strong>Стек:</strong>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="#">Посилання на проєкт</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 13 Цілі на найближчий рік -->
+        <section>
+            <div>
+                <h2>Цілі на найближчі 2 роки</h2>
+                <p>Мій особистий спідран: план того, що я збираюся розірвати найближчим часом.</p>
+                <div>
+                    <ul>
+                        <li>
+                            <div>
+                                <strong>🇯🇵 Вивчити японську мову до рівня N3</strong>
+                                <span>В процесі (25%)</span>
+                            </div>
+                            <progress value="25" max="100"></progress>
+                        </li>
+                        <li>
+                            <div>
+                                <strong>🎯 [Заглушка: Знайти віддалену роботу / Вивчити React]</strong>
+                                <span>Тільки почав (10%)</span>
+                            </div>
+                            <progress value="10" max="100"></progress>
+                        </li>
+                        <li>
+                            <div>
+                                <strong>🎸 [Заглушка: Записати перший демо-трек / Написати збірку]</strong>
+                                <span>Ще в планах (0%)</span>
+                            </div>
+                            <progress value="0" max="100"></progress>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 14 Цікаві факти про мене -->
+        <section>
+            <div>
+                <h2>Цікаві факти про мене</h2>
+                <div>
+                    <details>
+                        <summary>Факт №1 [Про творчість чи звички]</summary>
+                        <p>Тут напишеш перший факт. Наприклад, що можеш випити подвійний італійський еспресо на ніч і
+                            піти писати код.</p>
+                    </details>
+                    <details>
+                        <summary>Факт №2 [Заглушка]</summary>
+                        <p>Тут буде розкриватися твій другий цікавий факт.</p>
+                    </details>
+                    <details>
+                        <summary>Факт №3 [Заглушка]</summary>
+                        <p>Текст для третього факту (можеш розказати про улюблений математичний алгоритм чи щось таке).
+                        </p>
+                    </details>
+                    <details>
+                        <summary>Факт №4 [Заглушка]</summary>
+                        <p>Ще один факт для кількості.</p>
+                    </details>
+                    <details>
+                        <summary>Факт №5 [Заглушка]</summary>
+                        <p>Останній п'ятий факт для завершення секції.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- 15 Улюблені цитати -->
+        <section>
+            <div>
+                <h2>Улюблені цитати</h2>
+                <div>
+                    <blockquote cite="https://statham.com">
+                        <p>«Якщо ти впав — вставай. Якщо ти встав — не падай.»</p>
+                        <footer>— <cite>Джейсон Стетхем (можливо)</cite></footer>
+                    </blockquote>
+                    <blockquote cite="https://example.com">
+                        <p>«Тут буде якась реально глибока цитата, або рядок з треку Ані Петраш чи provulok, який
+                            розриває душу.»</p>
+                        <footer>— <cite>Ім'я автора або виконавця</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- 16 Контакти / зворотний зв’язок -->
+        <section>
+            <div>
+                <h2>Зворотний зв'язок</h2>
+                <form action="#" method="get">
+                    <div>
+                        <label for="userName">Ім'я:</label>
+                        <input type="text" id="userName" name="userName" required minlength="2"
+                            pattern="[A-Za-zА-Яа-яІіЇїЄєҐґ'\s]+">
+                    </div>
+                    <div>
+                        <label for="userEmail">E-mail:</label>
+                        <input type="email" id="userEmail" name="userEmail" required>
+                    </div>
+                    <div>
+                        <label for="subject">Тема:</label>
+                        <select id="subject" name="subject">
+                            <option value="job">Робота / Стажування</option>
+                            <option value="question">Запитання</option>
+                            <option value="other">Інше</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message">Повідомлення:</label>
+                        <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">Я даю згоду на обробку моїх персональних даних</label>
+                    </div>
+                    <button type="submit">Надіслати</button>
+                </form>
+                <aside>
+                    <p><em>Форма працює виключно у демонстраційному режимі.</em></p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- 17 Прикінцеві думки -->
+        <section>
+            <div>
+                <h2>Прикінцеві думки</h2>
+                <p>Дякую, що дочитали до кінця!</p>
+            </div>
+        </section>
 
     </main>
+
     <footer>
-        <p>Привіт</p>
+        <p>Створено з кавою та безсонними ночами. 2026</p>
     </footer>
 </body>
 
