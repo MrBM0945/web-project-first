@@ -20,6 +20,16 @@
 <body class="page">
     <header class="header">
         <div class="container header__container">
+            <div class="header__logo">MyPortfolio</div>
+
+            <input type="checkbox" id="burger-toggle" class="header__checkbox">
+
+            <label for="burger-toggle" class="header__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#" class="nav__link">Головна</a></li>
@@ -38,9 +48,7 @@
                 <h1 class="section__title about__title">Привіт, вітаю в моєму портфоліо!</h1>
                 <div class="about__content">
                     <picture class="about__picture">
-                        <source media="(min-width: 1024px)" srcset="images/photo-desktop.jpg">
-                        <source media="(min-width: 768px)" srcset="images/photo-tablet.jpg">
-                        <img src="images/photo-mobile.jpg" alt="Моє фото" class="about__img" width="300" height="300"
+                        <img src="images/myprofilephoto.jpg" alt="Моє фото" class="about__img" width="300" height="300"
                             loading="lazy">
                     </picture>
                     <div class="about__info">
@@ -161,35 +169,35 @@
                         </thead>
                         <tbody class="table__body">
                             <tr class="table__row">
-                                <td class="table__td"><img src="images/book-clean-code.jpg" alt="Обкладинка Фах"
+                                <td class="table__td"><img src="images/Fah-237x367.jpg" alt="Обкладинка Фах"
                                         class="table__img" width="50" height="75" loading="lazy"></td>
                                 <td class="table__td">Айзек Азімов</td>
                                 <td class="table__td">Фах</td>
                                 <td class="table__td">Я ЛЮБЛЮ ПЕЛЬМЕНІ</td>
                             </tr>
                             <tr class="table__row">
-                                <td class="table__td"><img src="images/book-witcher.jpg" alt="Обкладинка Алхімік"
+                                <td class="table__td"><img src="images/Alchemist.jpg" alt="Обкладинка Алхімік"
                                         class="table__img" width="50" height="75" loading="lazy"></td>
                                 <td class="table__td">Пауло Коельйо</td>
                                 <td class="table__td">Алхімік</td>
                                 <td class="table__td">Прикольно, мні нрав</td>
                             </tr>
                             <tr class="table__row">
-                                <td class="table__td"><img src="images/book-1984.jpg" alt="Обкладинка Момент"
+                                <td class="table__td"><img src="images/Moment.png" alt="Обкладинка Момент"
                                         class="table__img" width="50" height="75" loading="lazy"></td>
                                 <td class="table__td">Володимир Винниченко</td>
                                 <td class="table__td">Момент</td>
                                 <td class="table__td">ТА!</td>
                             </tr>
                             <tr class="table__row">
-                                <td class="table__td"><img src="images/book-dune.jpg" alt="Обкладинка Дюна"
+                                <td class="table__td"><img src="images/Zbirka.webp" alt="Обкладинка Дюна"
                                         class="table__img" width="50" height="75" loading="lazy"></td>
                                 <td class="table__td">Володимир Винниченко</td>
                                 <td class="table__td">Чорна пантера та білий ведмідь</td>
                                 <td class="table__td">Хіба не зрозуміло?</td>
                             </tr>
                             <tr class="table__row">
-                                <td class="table__td"><img src="images/book-atomic.jpg" alt="Обкладинка Атомні звички"
+                                <td class="table__td"><img src="images/atomic_habits.jpg" alt="Обкладинка Атомні звички"
                                         class="table__img" width="50" height="75" loading="lazy"></td>
                                 <td class="table__td">Джеймс Клір</td>
                                 <td class="table__td">Атомні звички</td>
@@ -234,7 +242,7 @@
                 <h2 class="section__title">Улюблені аніме та мультсеріали</h2>
                 <div class="grid grid--cards">
                     <article class="card card--anime">
-                        <img src="images/anime_violet-evergarden.jpg" alt="Постер Вайолет Еверґарден" class="card__img"
+                        <img src="images/Violet Evergarden.jpg" alt="Постер Вайолет Еверґарден" class="card__img"
                             width="100" height="150" loading="lazy">
                         <div class="card__content">
                             <h3 class="card__title">Вайолет Еверґарден</h3>
@@ -242,7 +250,7 @@
                         </div>
                     </article>
                     <article class="card card--anime">
-                        <img src="images/anime_how_to_train_dragon-prince.jpg" alt="Постер Як приборкати дракона 2"
+                        <img src="images/How to train dragon.webp" alt="Постер Як приборкати дракона 2"
                             class="card__img" width="100" height="150" loading="lazy">
                         <div class="card__content">
                             <h3 class="card__title">Як приборкати дракона</h3>
@@ -290,7 +298,7 @@
                 </p>
                 <div class="grid grid--cards">
                     <article class="card card--person">
-                        <img src="img/petrash.jpg" alt="Аня Петраш" class="card__avatar" width="100" height="100"
+                        <img src="images/petrashjpg.jpg" alt="Аня Петраш" class="card__avatar" width="100" height="100"
                             loading="lazy">
                         <h3 class="card__title">Аня Петраш</h3>
                         <p class="card__subtitle">Інді-виконавиця</p>
@@ -299,7 +307,7 @@
                             сильно надихають на творчість.</p>
                     </article>
                     <article class="card card--person">
-                        <img src="img/terence-tao.jpg" alt="Теренс Тао" class="card__avatar" width="100" height="100"
+                        <img src="images/Terence tao.jpg" alt="Теренс Тао" class="card__avatar" width="100" height="100"
                             loading="lazy">
                         <h3 class="card__title">Теренс Тао</h3>
                         <p class="card__subtitle">Математик, лауреат Філдсівської премії</p>
@@ -308,7 +316,7 @@
                             дуже спокійний і системний підхід до вирішення найскладніших проблем.</p>
                     </article>
                     <article class="card card--person">
-                        <img src="img/linus-torvalds.jpg" alt="Лінус Торвальдс" class="card__avatar" width="100"
+                        <img src="images/Linus Torvalds.jpg" alt="Лінус Торвальдс" class="card__avatar" width="100"
                             height="100" loading="lazy">
                         <h3 class="card__title">Лінус Торвальдс</h3>
                         <p class="card__subtitle">Програміст, творець Linux та Git</p>
@@ -478,15 +486,6 @@
                 </aside>
             </div>
         </section>
-
-        <!-- 17 Прикінцеві думки -->
-        <section class="section thoughts">
-            <div class="container">
-                <h2 class="section__title">Прикінцеві думки</h2>
-                <p class="thoughts__text">Дякую, що дочитали до кінця!</p>
-            </div>
-        </section>
-
     </main>
 
     <footer class="footer">

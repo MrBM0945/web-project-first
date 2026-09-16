@@ -1,0 +1,242 @@
+/* =========================================
+   1. ЗМІННІ (VARIABLES) & ТЕМА
+   ========================================= */
+:root {
+    /* Кольори в сучасному форматі oklch() */
+    --bg-color: oklch(98% 0.01 250);
+    /* Світлий, трохи прохолодний фон */
+    --text-color: oklch(25% 0.02 250);
+    /* Темно-сірий текст */
+    --text-muted: oklch(55% 0.02 250);
+    /* Приглушений текст */
+    --accent: oklch(50% 0.12 250);
+    /* Глибокий синьо-бірюзовий (естетика) */
+    --accent-hover: oklch(40% 0.12 250);
+    --alt-bg: oklch(95% 0.02 250);
+    /* Легкий фон для чергування секцій */
+    --border-color: oklch(85% 0.02 250);
+    --white: #ffffff;
+
+    /* Відступи */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+
+    /* Радіус */
+    --radius: 12px;
+}
+
+/* =========================================
+   2. СКИДАННЯ СТИЛІВ (RESET)
+   ========================================= */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Плавний скрол до якорів */
+}
+
+body {
+    /* Сучасні системні шрифти без підключення зайвих файлів */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    /* Baseline - базовий ритм тексту */
+    font-size: 16px;
+}
+
+img,
+picture,
+video,
+iframe {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-hover);
+}
+
+ul,
+ol {
+    list-style: none;
+    /* Прибираємо стандартні крапки у списках */
+}
+
+/* =========================================
+   3. ГЛОБАЛЬНІ БЛОКИ (УТИЛІТИ)
+   ========================================= */
+/* Контейнер, щоб сайт не розповзався на моніторах */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/* Відступи для кожної секції */
+.section {
+    padding: var(--spacing-xl) 0;
+}
+
+/* Альтернативний фон, щоб секції візуально відділялися */
+.section--alt {
+    background-color: var(--alt-bg);
+}
+
+/* Заголовок секцій з використанням clamp() — сам змінює розмір від телефону до ПК */
+.section__title {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+    color: var(--text-color);
+    line-height: 1.2;
+}
+
+.section__desc {
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-muted);
+}
+
+/* =========================================
+   4. ШАПКА ТА БУРГЕР-МЕНЮ (CHECKBOX HACK)
+   ========================================= */
+.header {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    /* Шапка прилипає до верху при скролі */
+    top: 0;
+    z-index: 100;
+    padding: var(--spacing-md) 0;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--accent);
+}
+
+.nav__list {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.nav__link {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* Ховаємо магічний чекбокс */
+.header__checkbox {
+    display: none;
+}
+
+/* Ховаємо кнопку бургера на комп'ютерах (покажемо тільки на мобільних) */
+.header__burger {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 101;
+}
+
+/* Малюємо три полоски бургера */
+.header__burger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-color);
+    position: absolute;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.header__burger span:nth-child(1) {
+    top: 0;
+}
+
+.header__burger span:nth-child(2) {
+    top: 9px;
+}
+
+.header__burger span:nth-child(3) {
+    top: 18px;
+}
+
+/* =========================================
+   МОБІЛЬНА ВЕРСІЯ (Медіа-запит)
+   ========================================= */
+@media (max-width: 768px) {
+    .header__burger {
+        display: block;
+        /* Показуємо бургер */
+    }
+
+    .nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-color);
+        border-bottom: 1px solid var(--border-color);
+        padding: var(--spacing-lg) 0;
+
+        /* Ховаємо меню за межі екрану */
+        transform: translateY(-150%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease;
+        z-index: 99;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        /* Вертикальний список */
+        align-items: center;
+    }
+
+    /* МАГІЯ CHECKBOX HACK: якщо чекбокс натиснутий, виїжджає меню */
+    .header__checkbox:checked~.nav {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Анімація бургера -> перетворюється на ХРЕСТИК */
+    .header__checkbox:checked~.header__burger span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .header__checkbox:checked~.header__burger span:nth-child(2) {
+        opacity: 0;
+        /* Середня лінія зникає */
+    }
+
+    .header__checkbox:checked~.header__burger span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 9px;
+    }
+}
