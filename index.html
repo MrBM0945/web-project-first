@@ -18,6 +18,7 @@
 </head>
 
 <body class="page">
+    <a href="#main" class="skip-link">Перейти до основного вмісту</a>
     <header class="header">
         <div class="container header__container">
             <div class="header__logo">MyPortfolio</div>
@@ -32,7 +33,7 @@
 
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link">Головна</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link" aria-current="page">Головна</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">Про мене</a></li>
                     <li class="nav__item"><a href="#projects" class="nav__link">Проєкти</a></li>
                     <li class="nav__item"><a href="#contacts" class="nav__link">Контакти</a></li>
@@ -41,13 +42,14 @@
         </div>
     </header>
 
-    <main class="main">
+    <main id="main" class="main">
         <!-- 1 ПРО МЕНЕ -->
         <section id="about" class="section about">
             <div class="container about__container">
                 <h1 class="section__title about__title">Привіт, вітаю в моєму портфоліо!</h1>
                 <div class="about__content">
                     <picture class="about__picture">
+                        <source media="(min-width: 768px)" srcset="images/myprofilephoto.jpg">
                         <img src="images/myprofilephoto.jpg" alt="Моє фото" class="about__img" width="300" height="300"
                             loading="lazy">
                     </picture>
@@ -136,13 +138,13 @@
                 <h2 class="section__title">Хобі та захоплення</h2>
                 <div class="grid grid--hobbies">
                     <div class="card card--hobby">
-                        <img src="images/icon-camera.png" alt="Майнкрафт" class="card__icon" width="48" height="48"
+                        <img src="images/minecraft.jpg" alt="Майнкрафт" class="card__img" width="450" height="300"
                             loading="lazy">
                         <h3 class="card__title">Майнкрафт</h3>
                         <p class="card__text">Люблю досліджувати ігрові механіки гри та цікаві модифікації.</p>
                     </div>
                     <div class="card card--hobby">
-                        <img src="images/icon-guitar.png" alt="Ліплення" class="card__icon" width="48" height="48"
+                        <img src="images/scultping.webp" alt="Ліплення" class="card__img" width="450" height="300"
                             loading="lazy">
                         <h3 class="card__title">Ліплення</h3>
                         <p class="card__text">Подобається створювати фігурки з глини та пластиліну, особливо
@@ -170,35 +172,39 @@
                         <tbody class="table__body">
                             <tr class="table__row">
                                 <td class="table__td"><img src="images/Fah-237x367.jpg" alt="Обкладинка Фах"
-                                        class="table__img" width="50" height="75" loading="lazy"></td>
+                                        class="table__img" width="150" height="225" loading="lazy"></td>
                                 <td class="table__td">Айзек Азімов</td>
                                 <td class="table__td">Фах</td>
-                                <td class="table__td">Я ЛЮБЛЮ ПЕЛЬМЕНІ</td>
+                                <td class="table__td">Ця повість про те, як освіта та вибір професії можуть впливати на
+                                    майбутнє людини та суспільства. Дуже глибокі роздуми.</td>
                             </tr>
                             <tr class="table__row">
                                 <td class="table__td"><img src="images/Alchemist.jpg" alt="Обкладинка Алхімік"
-                                        class="table__img" width="50" height="75" loading="lazy"></td>
+                                        class="table__img" width="150" height="225" loading="lazy"></td>
                                 <td class="table__td">Пауло Коельйо</td>
                                 <td class="table__td">Алхімік</td>
-                                <td class="table__td">Прикольно, мні нрав</td>
+                                <td class="table__td">Надихаюча філософська історія про пошуки власного шляху, подолання
+                                    страхів та здійснення мрій.</td>
                             </tr>
                             <tr class="table__row">
                                 <td class="table__td"><img src="images/Moment.png" alt="Обкладинка Момент"
-                                        class="table__img" width="50" height="75" loading="lazy"></td>
+                                        class="table__img" width="150" height="225" loading="lazy"></td>
                                 <td class="table__td">Володимир Винниченко</td>
                                 <td class="table__td">Момент</td>
-                                <td class="table__td">ТА!</td>
+                                <td class="table__td">Неймовірна імпресіоністична новела про кохання, швидкоплинність
+                                    життя та межу між життям і смертю.</td>
                             </tr>
                             <tr class="table__row">
                                 <td class="table__td"><img src="images/Zbirka.webp" alt="Обкладинка Дюна"
-                                        class="table__img" width="50" height="75" loading="lazy"></td>
+                                        class="table__img" width="150" height="225" loading="lazy"></td>
                                 <td class="table__td">Володимир Винниченко</td>
                                 <td class="table__td">Чорна пантера та білий ведмідь</td>
-                                <td class="table__td">Хіба не зрозуміло?</td>
+                                <td class="table__td">Сильна п'єса, яка розкриває психологічний конфлікт між творчим
+                                    покликанням та родинними обов'язками.</td>
                             </tr>
                             <tr class="table__row">
                                 <td class="table__td"><img src="images/atomic_habits.jpg" alt="Обкладинка Атомні звички"
-                                        class="table__img" width="50" height="75" loading="lazy"></td>
+                                        class="table__img" width="150" height="225" loading="lazy"></td>
                                 <td class="table__td">Джеймс Клір</td>
                                 <td class="table__td">Атомні звички</td>
                                 <td class="table__td">Дуже дієва система для формування хороших звичок.</td>
@@ -243,7 +249,7 @@
                 <div class="grid grid--cards">
                     <article class="card card--anime">
                         <img src="images/Violet Evergarden.jpg" alt="Постер Вайолет Еверґарден" class="card__img"
-                            width="100" height="150" loading="lazy">
+                            width="300" height="450" loading="lazy">
                         <div class="card__content">
                             <h3 class="card__title">Вайолет Еверґарден</h3>
                             <p class="card__text">Моя оцінка: 100/10</p>
@@ -251,7 +257,7 @@
                     </article>
                     <article class="card card--anime">
                         <img src="images/How to train dragon.webp" alt="Постер Як приборкати дракона 2"
-                            class="card__img" width="100" height="150" loading="lazy">
+                            class="card__img" width="300" height="450" loading="lazy">
                         <div class="card__content">
                             <h3 class="card__title">Як приборкати дракона</h3>
                             <p class="card__text">Моя оцінка: 11/10</p>
@@ -268,20 +274,20 @@
                 <p class="section__desc">Мій список невеликий, але кожне місце має для мене особливе значення.</p>
                 <div class="grid gallery">
                     <figure class="gallery__item card">
-                        <img src="img/metro-paris.jpg" alt="Метро Парижа" class="gallery__img" width="400" height="300"
-                            loading="lazy">
+                        <img src="images/Paris Metro.jpg" alt="Метро Парижа" class="gallery__img" width="400"
+                            height="300" loading="lazy">
                         <figcaption class="gallery__caption">Французьке метро. Хочу просто їхати в цій підземці, слухати
                             музику і дивитися у вікно.</figcaption>
                     </figure>
                     <figure class="gallery__item card">
-                        <img src="img/szkocka-cafe.jpg" alt="Шкотська кав'ярня у Львові" class="gallery__img"
-                            width="400" height="300" loading="lazy">
+                        <img src="images/skotska.jpg" alt="Шкотська кав'ярня у Львові" class="gallery__img" width="400"
+                            height="300" loading="lazy">
                         <figcaption class="gallery__caption">«Шкотська кав'ярня» у Львові. Місце, де чілив Стефан Банах
                             і творив історію математики.</figcaption>
                     </figure>
                     <figure class="gallery__item card">
-                        <img src="img/tokyo.jpg" alt="Нічне Токіо, Японія" class="gallery__img" width="400" height="300"
-                            loading="lazy">
+                        <img src="images/tokyo.jpeg" alt="Нічне Токіо, Японія" class="gallery__img" width="400"
+                            height="300" loading="lazy">
                         <figcaption class="gallery__caption">Токіо, Японія. Хочу на власні очі побачити цей неймовірний
                             ритм одного з найтехнологічніших мегаполісів світу та відчути його унікальну неонову
                             естетику.</figcaption>
@@ -298,7 +304,7 @@
                 </p>
                 <div class="grid grid--cards">
                     <article class="card card--person">
-                        <img src="images/petrashjpg.jpg" alt="Аня Петраш" class="card__avatar" width="100" height="100"
+                        <img src="images/petrashjpg.jpg" alt="Аня Петраш" class="card__avatar" width="150" height="150"
                             loading="lazy">
                         <h3 class="card__title">Аня Петраш</h3>
                         <p class="card__subtitle">Інді-виконавиця</p>
@@ -307,7 +313,7 @@
                             сильно надихають на творчість.</p>
                     </article>
                     <article class="card card--person">
-                        <img src="images/Terence tao.jpg" alt="Теренс Тао" class="card__avatar" width="100" height="100"
+                        <img src="images/Terence tao.jpg" alt="Теренс Тао" class="card__avatar" width="150" height="150"
                             loading="lazy">
                         <h3 class="card__title">Теренс Тао</h3>
                         <p class="card__subtitle">Математик, лауреат Філдсівської премії</p>
@@ -316,8 +322,8 @@
                             дуже спокійний і системний підхід до вирішення найскладніших проблем.</p>
                     </article>
                     <article class="card card--person">
-                        <img src="images/Linus Torvalds.jpg" alt="Лінус Торвальдс" class="card__avatar" width="100"
-                            height="100" loading="lazy">
+                        <img src="images/Linus Torvalds.jpg" alt="Лінус Торвальдс" class="card__avatar" width="150"
+                            height="150" loading="lazy">
                         <h3 class="card__title">Лінус Торвальдс</h3>
                         <p class="card__subtitle">Програміст, творець Linux та Git</p>
                         <p class="card__text"><strong>Чому:</strong> Написав Linux просто як хобі, а Git створив за пару
@@ -377,16 +383,16 @@
                         </li>
                         <li class="goals__item">
                             <div class="goals__header">
-                                <strong class="goals__title">🎯 [Заглушка: Знайти віддалену роботу / Вивчити
-                                    React]</strong>
+                                <strong class="goals__title">💻 Опанувати сучасні веб-фреймворки (наприклад, React) та
+                                    створити власний складний додаток</strong>
                                 <span class="goals__status">Тільки почав (10%)</span>
                             </div>
                             <progress class="goals__progress" value="10" max="100"></progress>
                         </li>
                         <li class="goals__item">
                             <div class="goals__header">
-                                <strong class="goals__title">🎸 [Заглушка: Записати перший демо-трек / Написати
-                                    збірку]</strong>
+                                <strong class="goals__title">🎸 Вивчити на гітарі складні fingerstyle-композиції та
+                                    подолати страх сцени</strong>
                                 <span class="goals__status">Ще в планах (0%)</span>
                             </div>
                             <progress class="goals__progress" value="0" max="100"></progress>
@@ -402,26 +408,32 @@
                 <h2 class="section__title">Цікаві факти про мене</h2>
                 <div class="card card--facts accordion">
                     <details class="accordion__item">
-                        <summary class="accordion__summary">Факт №1 [Про творчість чи звички]</summary>
-                        <p class="accordion__content">Тут напишеш перший факт. Наприклад, що можеш випити подвійний
-                            італійський еспресо на ніч і піти писати код.</p>
+                        <summary class="accordion__summary">Нічний кодер</summary>
+                        <p class="accordion__content">Найкращі ідеї та найчистіший код приходять до мене пізно вночі.
+                            Тиша, кава і темна тема в редакторі — це моє ідеальне комбо для продуктивності.</p>
                     </details>
                     <details class="accordion__item">
-                        <summary class="accordion__summary">Факт №2 [Заглушка]</summary>
-                        <p class="accordion__content">Тут буде розкриватися твій другий цікавий факт.</p>
+                        <summary class="accordion__summary">Математичний підхід</summary>
+                        <p class="accordion__content">Я люблю шукати оптимальні та елегантні рішення не тільки під час
+                            програмування, а й у повсякденному житті, використовуючи логіку та математичне моделювання.
+                        </p>
                     </details>
                     <details class="accordion__item">
-                        <summary class="accordion__summary">Факт №3 [Заглушка]</summary>
-                        <p class="accordion__content">Текст для третього факту (можеш розказати про улюблений
-                            математичний алгоритм чи щось таке).</p>
+                        <summary class="accordion__summary">Майстер поєднання</summary>
+                        <p class="accordion__content">Можу з легкістю одночасно слухати глибокі наукові подкасти про
+                            астрофізику і при цьому ліпити фігурки улюблених персонажів з ігор.</p>
                     </details>
                     <details class="accordion__item">
-                        <summary class="accordion__summary">Факт №4 [Заглушка]</summary>
-                        <p class="accordion__content">Ще один факт для кількості.</p>
+                        <summary class="accordion__summary">Фанат Open Source</summary>
+                        <p class="accordion__content">Захоплююсь філософією відкритого програмного забезпечення. Вважаю,
+                            що знання та круті технології мають бути доступними кожному, як це колись зробив Лінус
+                            Торвальдс.</p>
                     </details>
                     <details class="accordion__item">
-                        <summary class="accordion__summary">Факт №5 [Заглушка]</summary>
-                        <p class="accordion__content">Останній п'ятий факт для завершення секції.</p>
+                        <summary class="accordion__summary">Завжди в русі</summary>
+                        <p class="accordion__content">Навіть під час відпочинку я завжди щось вивчаю. Для мене найкращий
+                            відпочинок — це зміна діяльності, будь то японська мова чи новий факт про будову Всесвіту.
+                        </p>
                     </details>
                 </div>
             </div>
@@ -434,13 +446,14 @@
                 <div class="grid grid--quotes">
                     <blockquote class="quote card" cite="https://statham.com">
                         <p class="quote__text">«Якщо ти впав — вставай. Якщо ти встав — не падай.»</p>
-                        <footer class="quote__footer">— <cite class="quote__author">Джейсон Стетхем (можливо)</cite>
+                        <footer class="quote__footer">— <cite class="quote__author">Джейсон Стетхем</cite>
                         </footer>
                     </blockquote>
                     <blockquote class="quote card" cite="https://example.com">
-                        <p class="quote__text">«Тут буде якась реально глибока цитата, або рядок з треку Ані Петраш чи
-                            provulok, який розриває душу.»</p>
-                        <footer class="quote__footer">— <cite class="quote__author">Ім'я автора або виконавця</cite>
+                        <p class="quote__text">«Для тих, хто не знає математики, важко відчути красу, найглибшу красу
+                            природи... Якщо ви хочете пізнати природу, оцінити її, необхідно розуміти мову, якою вона
+                            говорить.»</p>
+                        <footer class="quote__footer">— <cite class="quote__author">Річард Фейнман</cite>
                         </footer>
                     </blockquote>
                 </div>
@@ -491,6 +504,14 @@
     <footer class="footer">
         <div class="container footer__container">
             <p class="footer__text">Створено з кавою та безсонними ночами. <time datetime="2026">2026</time></p>
+
+            <ul class="footer__socials">
+                <li><a href="#" class="footer__link" aria-label="Мій Instagram" target="_blank"
+                        rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://github.com/MrBM0945" class="footer__link" aria-label="Мій GitHub" target="_blank"
+                        rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+            <a href="#main" class="footer__totop" aria-label="Повернутися нагору">Нагору ↑</a>
         </div>
     </footer>
 </body>
