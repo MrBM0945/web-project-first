@@ -19,13 +19,13 @@
 
 ### W3C HTML Validator
 HTML-код повністю валідний і не містить помилок чи попереджень.
-![W3C Validator](<[<img width="1280" height="408" alt="зображення" src="https://github.com/user-attachments/assets/e06e25d2-46c0-4474-b631-7761c0a92ac4" />
-])
+<[<img width="1280" height="408" alt="зображення" src="https://github.com/user-attachments/assets/e06e25d2-46c0-4474-b631-7761c0a92ac4" />
+
 
 ### Google Lighthouse (Mobile)
 Сайт оптимізовано для мобільних пристроїв, всі показники у "зеленій" зоні. Зображення стиснуті та переведені у формат WebP.
-![Lighthouse Report](<[<img width="1280" height="408" alt="зображення" src="https://github.com/user-attachments/assets/d1986005-96a7-439c-bab3-c345ee101c3c" />
-]>)
+![Lighthouse Report]<img width="1280" height="408" alt="зображення" src="https://github.com/user-attachments/assets/d1986005-96a7-439c-bab3-c345ee101c3c" />
+
 
 ---
 
