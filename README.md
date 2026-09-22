@@ -24,7 +24,8 @@ HTML-код повністю валідний і не містить помил�
 
 ### Google Lighthouse (Mobile)
 Сайт оптимізовано для мобільних пристроїв, всі показники у "зеленій" зоні. Зображення стиснуті та переведені у формат WebP.
-![Lighthouse Report]<img width="1280" height="408" alt="зображення" src="https://github.com/user-attachments/assets/d1986005-96a7-439c-bab3-c345ee101c3c" />
+![Lighthouse Report] <img width="1066" height="245" alt="зображення" src="https://github.com/user-attachments/assets/421b5d7a-b059-4b38-9307-3f09fea2c19e" />
+
 
 
 ---
