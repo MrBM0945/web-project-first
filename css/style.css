@@ -639,6 +639,8 @@ ol {
     .about__text,
     .card__text {
         max-width: 70ch;
+        margin-inline: auto;
+        text-align: left;
     }
 }
 
